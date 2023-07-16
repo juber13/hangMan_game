@@ -1,0 +1,92 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: Arial, Helvetica, sans-serif;
+    list-style: none;
+}
+
+body{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: rgb(153, 125, 224);
+    min-height: 100vh;
+}
+
+
+
+.container{
+    background-color: #fff;
+    max-width: 600px;
+    padding: 34px 24px;
+    display: flex;
+}
+
+.hangman-container h4{
+    margin-top: 10px;
+}
+
+.controllers{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    justify-content: space-around;
+    padding: 10px 20px;
+}
+
+.controllers .letters-container ul{
+    display: flex;
+    align-items: center;
+    justify-content:center ;
+    gap: 10px;
+}
+
+.letters-container ul .letter{
+    text-align: center;
+    width: 20px;
+    border: none;
+    border-bottom: 3px solid #000;
+}
+
+ul .letter.gussed{
+    margin-bottom: 20px;
+    color: red;
+}
+
+.text p{
+  margin-bottom: 10px;
+}
+
+.text h4 b{
+    font-weight: bold;
+}
+
+
+.keyboard{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    gap: 4px;
+}
+
+.keyboard button{
+    font-size: 0.8rem;
+    border: none;
+    padding: 8px 12px;
+    background-color: rgb(153, 125, 224);
+    color: #fff;
+    cursor: pointer;
+    outline: none;
+
+}
+
+.buttons button[disabled]{
+    pointer-events: none;
+    opacity: 0.6;
+}
+
+.buttons button:hover{
+    opacity: 0.4;
+}
